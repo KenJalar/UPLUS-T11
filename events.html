@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events - UPLUS Empowerment and Transformation International</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="white logo bg.png">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="white logo bg.png" alt="UPLUS Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html#who-we-are">Who We Are</a></li>
+                            <li><a class="dropdown-item" href="about.html#our-vision">Our Vision</a></li>
+                            <li><a class="dropdown-item" href="about.html#our-mission">Our Mission</a></li>
+                            <li><a class="dropdown-item" href="about.html#impact-cycle-about">Impact Cycle</a></li>
+                            <li><a class="dropdown-item" href="about.html#partners">Partners & Sponsors</a></li>
+                            <li><a class="dropdown-item" href="about.html#founder">Message from the Founder</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="impactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Impact</a>
+                         <ul class="dropdown-menu" aria-labelledby="impactDropdown">
+                             <li><a class="dropdown-item" href="projects.html#projects-page">Our Projects</a></li>
+                            <li><a class="dropdown-item" href="articles.html">Articles</a></li>
+                            <li><a class="dropdown-item" href="events.html">News & Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+                <button type="button" class="btn btn-donate ms-lg-3" data-bs-toggle="modal" data-bs-target="#donationModal">Donate Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="events" class="py-5 bg-light" style="padding-top: 120px !important;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">News & Events</h2>
+                <div class="title-divider"></div>
+                <p class="lead">Join us, stay informed, and look back at our impactful gatherings.</p>
+            </div>
+
+            <div class="text-center mb-5">
+                <div class="btn-group shadow-sm rounded-pill" role="group" aria-label="Event Filters">
+                    <button type="button" class="btn btn-event-filter active" data-filter="all">All Events</button>
+                    <button type="button" class="btn btn-event-filter" data-filter="upcoming">Upcoming</button>
+                    <button type="button" class="btn btn-event-filter" data-filter="past">Past</button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 event-item-wrapper" data-status="upcoming">
+                    <div class="event-card h-100" data-bs-toggle="modal" data-bs-target="#eventDetailModal"
+                         data-event-title="Annual Youth Leadership Summit"
+                         data-event-banner="act1.jpg"
+                         data-event-date="October 25, 2025"
+                         data-event-location="Kampala, Uganda"
+                         data-event-description="A full-day summit for young leaders to engage with policymakers, develop advocacy skills, and network with peers. This event is aimed at empowering the next generation of changemakers."
+                         data-event-type="summit"
+                         data-event-volunteers="150"
+                         data-event-target-group="Youth Leaders"
+                         data-event-impact="500+ Youth Engaged">
+                        <img src="act1.jpg" class="card-img-top" alt="Youth Summit">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">October 25, 2025 <span class="badge bg-warning text-dark float-end">Upcoming</span></p>
+                            <h5 class="card-title">Annual Youth Leadership Summit</h5>
+                            <p class="card-text small">Empowering the next generation of changemakers to engage with policymakers and develop advocacy skills.</p>
+                        </div>
+                        <div class="card-footer">View Details</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 event-item-wrapper" data-status="past">
+                    <div class="event-card h-100" data-bs-toggle="modal" data-bs-target="#eventDetailModal"
+                         data-event-title="Staff Capacity Building"
+                         data-event-banner="TO5.jpg"
+                         data-event-date="September 24, 2025"
+                         data-event-location="UPLUS Office, Kampala"
+                         data-event-description="A dedicated workshop for our team focused on advanced monitoring & evaluation techniques and project management to enhance our impact and efficiency."
+                         data-event-gallery="T01.JPG, T03.JPG, T04.JPG, T05.JPG, T07.JPG, T06.JPG"
+                         data-event-type="internal"
+                         data-event-target-group="UPLUS Staff">
+                        <img src="TO8.jpg" class="card-img-top" alt="Staff Training">
+                        <div class="card-body">
+                             <p class="card-text text-muted small">September 24, 2025 <span class="badge bg-secondary float-end">Past</span></p>
+                            <h5 class="card-title">Staff Capacity Building</h5>
+                            <p class="card-text small">Our team engaged in a workshop on advanced M&E and project management to better serve our communities.</p>
+                        </div>
+                        <div class="card-footer">View Details</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 event-item-wrapper" data-status="past">
+                    <div class="event-card h-100" data-bs-toggle="modal" data-bs-target="#eventDetailModal"
+                         data-event-title="Rhino Naming Ceremony"
+                         data-event-banner="R02.jpg"
+                         data-event-date="September 22, 2025"
+                         data-event-location="Uganda Wildlife Education Centre (UWEC)"
+                         data-event-description="A celebration of conservation efforts where UPLUS participated in naming the new southern white rhino. This event highlights our commitment to environmental sustainability and protecting Uganda's biodiversity."
+                         data-event-gallery="R01.JPG, R03.JPG, R04.JPG, R05.JPG, R06.JPG"
+                         data-event-type="community"
+                         data-event-impact="Conservation Awareness">
+                        <img src="R02.jpg" class="card-img-top" alt="Rhino Naming">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">September 22, 2025 <span class="badge bg-secondary float-end">Past</span></p>
+                            <h5 class="card-title">Rhino Naming Ceremony at UWEC</h5>
+                            <p class="card-text small">We proudly joined our partners to celebrate a new life and highlight our commitment to wildlife conservation.</p>
+                        </div>
+                        <div class="card-footer">View Details</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 event-item-wrapper" data-status="past">
+                    <div class="event-card h-100" data-bs-toggle="modal" data-bs-target="#eventDetailModal"
+                         data-event-title="African Climate Summit II"
+                         data-event-banner="A02.jpg"
+                         data-event-date="September 5-10, 2025"
+                         data-event-location="Kampala, Uganda"
+                         data-event-description="UPLUS played a key role in the youth delegation at the second African Climate Summit, advocating for green jobs, sustainable agriculture, and greater youth involvement in climate policy."
+                         data-event-gallery="A04.jpg,A02.jpg,A01.jpg,A05.JPG, A07.JPG"
+                         data-event-type="advocacy"
+                         data-event-impact="Policy & Action">
+                        <img src="A04.jpg" class="card-img-top" alt="Climate Summit">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">September 5-10, 2025 <span class="badge bg-secondary float-end">Past</span></p> 
+                            <h5 class="card-title">African Climate Summit II - Addis Ababa</h5>
+                            <p class="card-text small">Our youth delegation advocated for green jobs and sustainable policies on a continental stage.</p>
+                        </div>
+                        <div class="card-footer">View Details</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 event-item-wrapper" data-status="past">
+                    <div class="event-card h-100" data-bs-toggle="modal" data-bs-target="#eventDetailModal"
+                         data-event-title="International Youth Day 2025"
+                         data-event-banner="z1.jpg"
+                         data-event-date="August 12, 2025"
+                         data-event-location="Masindi, Uganda"
+                         data-event-description="We joined the national celebrations in Masindi under the theme 'Youth Leading the Way for a Greener Tomorrow'. Our team led workshops on creating green enterprises and community-based climate action projects."
+                         data-event-gallery="YO6.JPG, YO3.JPG, z6.JPG, YO5.JPG, YO7.JPG, YO8.JPG, YO9.JPG, z2.JPG, z3.jpg, z4.jpg, z6.jpg"
+                         data-event-type="community"
+                         data-event-volunteers="1000+"
+                         data-event-target-group="Youth">
+                        <img src="z1.jpg" class="card-img-top" alt="Youth Day">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">August 12, 2025 <span class="badge bg-secondary float-end">Past</span></p>
+                            <h5 class="card-title">International Youth Day 2025 - Masindi</h5>
+                            <p class="card-text small">We celebrated in Masindi, hosting workshops on green enterprises and mobilizing youth for climate action.</p>
+                        </div>
+                        <div class="card-footer">View Details</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news-section" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Latest News</h2>
+                <div class="title-divider"></div>
+                <p class="lead">Stay updated with our latest activities and announcements.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card article-card-new h-100">
+                        <img src="w1.jpg" class="card-img-top" alt="News Image 1">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text"><small class="text-muted">September 10, 2025</small></p>
+                            <h5 class="card-title">New Vocational Skilling Program Launched</h5>
+                            <p class="card-text flex-grow-1">We've launched a program focusing on digital literacy and entrepreneurship for 50 young women in Kyanja.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card article-card-new h-100">
+                        <img src="b15.jpg" class="card-img-top" alt="News Image 2">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text"><small class="text-muted">August 22, 2025</small></p>
+                            <h5 class="card-title">Community-Led Climate Action Day</h5>
+                            <p class="card-text flex-grow-1">Over 200 volunteers joined our tree planting and community cleanup drive for a greener local environment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card article-card-new h-100">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=800" class="card-img-top" alt="News Image 3">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text"><small class="text-muted">Coming Soon</small></p>
+                            <h5 class="card-title">Partnership Announcement</h5>
+                            <p class="card-text flex-grow-1">We are finalizing a new partnership to expand our mental health programs. Stay tuned for details!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="modal fade" id="eventDetailModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eventModalTitle">Event Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-5 mb-4 mb-lg-0">
+                             <div id="eventModalGalleryContainer">
+                                </div>
+                             <img id="eventModalBanner" src="" class="img-fluid event-modal-image" alt="Event Banner" style="display: none;">
+                        </div>
+                        <div class="col-lg-7">
+                            <p id="eventModalDescription"></p>
+                             <hr>
+                            <p><strong><i class="far fa-calendar-alt me-2"></i>Date:</strong> <span id="eventModalDate"></span></p>
+                            <p><strong><i class="fas fa-map-marker-alt me-2"></i>Location:</strong> <span id="eventModalLocation"></span></p>
+                            <hr>
+                             <div class="row text-center mb-4 g-3" id="event-stats-container"></div>
+                            <div id="donation-info-container" class="mb-4" style="display: none;">
+                                <h6>Donation Progress</h6>
+                                <div class="progress" style="height: 25px;">
+                                    <div id="donationMeter" class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <span id="amountRaisedText" class="fw-bold">$0</span>
+                                    <span id="amountTargetText" class="text-muted">$0 Target</span>
+                                </div>
+                                 <div class="text-center mt-3">
+                                     <button type="button" class="btn btn-donate" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#donationModal">
+                                        <i class="fas fa-heart me-2"></i>Contribute to this Project
+                                    </button>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="donationModalLabel">Make a Donation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning text-center">
+                        <strong>Notice:</strong> Our online payment gateway is currently under maintenance. To make a donation, please contact us directly at <a href="tel:+256763390261">+256 763 390 261</a> or <a href="mailto:ueti.info@gmail.com">ueti.info@gmail.com</a> for alternative methods. We apologize for any inconvenience.
+                    </div>
+                    <p class="lead text-center">Your generosity fuels our mission. Thank you for your support!</p>
+                    <form id="donationForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3"><label for="donorName" class="form-label">Full Name</label><input type="text" class="form-control" id="donorName" required></div>
+                            <div class="col-md-6 mb-3"><label for="donorEmail" class="form-label">Email Address</label><input type="email" class="form-control" id="donorEmail" required></div>
+                        </div>
+                         <div class="mb-3"><label for="donationAmount" class="form-label">Amount (USD)</label><input type="number" class="form-control" id="donationAmount" placeholder="e.g., 50" required></div>
+                        <div class="mb-3">
+                            <label for="paymentMethod" class="form-label">Intended Payment Method</label>
+                            <select class="form-select" id="paymentMethod"><option selected>Choose...</option><option value="card">Credit/Debit Card</option><option value="mtn">MTN Mobile Money</option><option value="airtel">Airtel Money</option></select>
+                        </div>
+                        <button type="submit" class="btn btn-donate w-100 btn-lg">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center py-4">
+        <div class="container">
+            <p class="motto">"Fostering Unity, Empowering Communities, Building the Future."</p>
+             <div class="social-links mt-3 mb-3">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ueti_international?igsh=d2hoZWo1YXpyamdw&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://x.com/yutisacco_ug?s=21" aria-label="X (formerly Twitter)"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="mb-0">© 2025 UPLUS Empowerment and Transformation International. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <div class="dynamic-scrollbar"></div>
+    <a id="backToTop" class="back-to-top-btn" href="#"><i class="fas fa-arrow-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
