@@ -125,7 +125,7 @@ section { padding: 5rem 0; overflow-x: hidden; }
 .objectives-track { display: flex; transition: transform 0.5s ease-in-out; align-items: stretch; }
 .objective-card-new { flex: 0 0 100%; max-width: 100%; border-radius: 12px; padding: 2rem; color: white; text-align: center; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0 10px; position: relative; min-height: 280px; }
 .objective-card-new:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 12px 35px rgba(0,0,0,0.2); }
-.objective-card-new::after { content: 'More +'; position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%); font-weight: 700; padding: 0.5rem; border-radius: 50px; background: rgba(255,255,255,0.2); transition: all 0.3s; opacity: 0; }
+.objective-card-new::after { content: 'More +'; position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%); font-weight: 500; padding: 0.5rem; border-radius: 50px; background: rgba(255,255,255,0.2); transition: all 0.3s; opacity: 0; }
 .objective-card-new:hover::after { opacity: 1; }
 .objective-card-1 { background: linear-gradient(45deg, var(--primary-blue), #2a52c1); } .objective-card-2 { background: linear-gradient(45deg, var(--primary-green), #42c981); } .objective-card-3 { background: linear-gradient(45deg, var(--accent-orange), #e87b3a); } .objective-card-4 { background: linear-gradient(45deg, var(--accent-yellow), #f4d03f); color: var(--dark-text); } .objective-card-5 { background: linear-gradient(45deg, var(--accent-teal), #38c1ad); } .objective-card-6 { background: linear-gradient(45deg, var(--accent-purple), #9b59b6); } .objective-card-7 { background: linear-gradient(45deg, var(--accent-navy), #34495e); } .objective-card-8 { background: linear-gradient(45deg, var(--accent-maroon), #e74c3c); } .objective-card-9 { background: linear-gradient(45deg, var(--accent-lime), #2ecc71); color: var(--dark-text); } .objective-card-10 { background: linear-gradient(45deg, var(--accent-cyan), #00b8e6); color: var(--dark-text); } .objective-card-11 { background: linear-gradient(45deg, var(--accent-grey), #95a5a6); }
 .objective-icon { font-size: 3rem; margin-bottom: 1rem; }
@@ -316,15 +316,39 @@ section { padding: 5rem 0; overflow-x: hidden; }
     .contact-info, .map-container { margin-bottom: 2rem; }
     .founder-card { margin-bottom: 2rem; }
     .founder-pic-actual { width: 130px; height: 130px; }
-    .objectives-scroller-container { padding: 0 20px; }
-    .scroller-btn { display: none; }
-    .stat-number { font-size: 2.5rem; }
-    .stat-label { font-size: 1rem; }
     .partner-logo-item { padding: 1rem; }
     .values-ticker-track { width: calc(260px * 16); }
     @keyframes scroll-values { 100% { transform: translateX(calc(-260px * 8)); } }
     .about-grid-layout { display: flex; flex-direction: column; }
     
+    /* --- START: Objectives Scroller Fix for Mobile --- */
+    .objectives-scroller-container { 
+        padding: 0; /* Remove container padding to allow edge-to-edge scrolling */
+    }
+    .scroller-btn { 
+        display: none; /* Hide desktop navigation buttons */
+    }
+    .objectives-scroller {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Enforce snapping */
+        padding-bottom: 20px; /* Add space for shadows below cards */
+        scroll-padding-inline: 10%; /* Creates padding for snapping, helps center the 80% width cards */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+    }
+    .objectives-scroller::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome, Safari */
+    }
+    .objectives-track {
+        transition: none; /* Disable JS transition on mobile to allow native scroll */
+    }
+    .objectives-track .objective-card-new {
+        flex: 0 0 80%; /* Each card takes up 80% of the scroller's width */
+        max-width: 80%;
+        margin: 0 10px;
+        scroll-snap-align: center; /* Snap the card to the center of the scroller */
+    }
+    /* --- END: Objectives Scroller Fix for Mobile --- */
 }
 
 @media (max-width: 767.98px) {
@@ -342,7 +366,6 @@ section { padding: 5rem 0; overflow-x: hidden; }
     .stat-number { font-size: 2.2rem; }
     .stat-label { font-size: 0.9rem; }
     .partner-logo-item { padding: 1rem 0.5rem; }
-    .objectives-scroller-container { padding: 0 10px; }
     .testimonial-card { min-height: 320px; }
     .testimonial-card img { width: 80px; height: 80px; }
     .testimonial-card .quote { font-size: 1rem; }
@@ -392,7 +415,6 @@ section { padding: 5rem 0; overflow-x: hidden; }
 @media (max-width: 575.98px) {
     .stat-number { font-size: 2rem; }
     .stat-label { font-size: 0.8rem; line-height: 1.2; }
-    .objective-card-new { flex: 0 0 90%; max-width: 90%; margin: 0 auto; min-height: auto; padding: 1.5rem; }
     .project-modal-gallery-img { height: 250px; }
 }
 
